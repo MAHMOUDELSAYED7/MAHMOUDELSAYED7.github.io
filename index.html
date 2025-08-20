@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmoud El Sayed - Personal Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: #9C27B0;
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        
+        .header p {
+            font-size: 1.3em;
+            font-weight: 300;
+            opacity: 0.95;
+        }
+        
+        .content {
+            padding: 60px 40px;
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section h2 {
+            color: #222;
+            margin-bottom: 25px;
+            font-size: 2em;
+            font-weight: 300;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #9C27B0;
+        }
+        
+        .section p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+            max-width: 800px;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .project-card {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            border-color: #9C27B0;
+            box-shadow: 0 8px 25px rgba(156, 39, 176, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .project-card h3 {
+            color: #9C27B0;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            font-weight: 500;
+        }
+        
+        .project-card p {
+            color: #666;
+            line-height: 1.7;
+            margin: 0;
+        }
+        
+        .privacy-link {
+            display: inline-block;
+            background: #9C27B0;
+            color: white;
+            padding: 14px 30px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            margin-top: 25px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        
+        .privacy-link:hover {
+            background: #7B1FA2;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(156, 39, 176, 0.3);
+        }
+        
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+        
+        .footer p {
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+        
+        .social-links {
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .social-links a:hover {
+            color: #9C27B0;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2.2em;
+            }
+            
+            .content {
+                padding: 40px 20px;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .project-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Mahmoud El Sayed</h1>
+            <p>App Developer & Programmer</p>
+        </header>
+        
+        <main class="content">
+            <section class="section">
+                <h2>Welcome</h2>
+                <p>
+                    Welcome to my personal website. I'm Mahmoud El Sayed, an app developer and programmer specializing in developing intelligent applications and innovative programming solutions.
+                    I strive to deliver high-quality applications that help users in their daily lives.
+                </p>
+            </section>
+            
+            <section class="section">
+                <h2>My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Qubic AI</h3>
+                        <p>
+                            An intelligent application that uses artificial intelligence technologies to provide an advanced chat experience with text recognition capabilities from images.
+                            The app is available on Android with plans to launch on iOS soon.
+                        </p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Other Projects</h3>
+                        <p>
+                            I continuously work on developing new and innovative projects in the field of app development and programming.
+                            Follow this website to get the latest updates on my new projects.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section">
+                <h2>Privacy & Security</h2>
+                <p>
+                    I place great importance on user privacy and data security. All my applications are designed according to the highest privacy and security standards.
+                </p>
+                <a href="PRIVACY-POLICY.md" class="privacy-link">View Privacy Policy</a>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p>&copy; 2025 Mahmoud El Sayed. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/MAHMOUDELSAYED7">GitHub</a>
+                <a href="mailto:contact@mahmoudelsayed7.com">Email</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
